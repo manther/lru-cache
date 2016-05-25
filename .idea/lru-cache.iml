@@ -38,6 +38,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="rake (vbundled(10.5.0), /Users/jasony/VMop/tmp/lru-cache/vendor/bundle/gems/rake-10.5.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/rakelib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.5.0/rakelib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.11.2, ruby-2.0.0-p481) [gem]" level="application" />
   </component>
 </module>
