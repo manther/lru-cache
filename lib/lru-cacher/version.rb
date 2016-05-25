@@ -1,3 +1,3 @@
-module LRU
+class LRUCacher
   VERSION = '1.0.0'
 end

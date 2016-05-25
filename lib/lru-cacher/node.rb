@@ -1,4 +1,4 @@
-module LRU
+class LRUCacher
   class Node
     attr_accessor :value, :next_node, :prev_node, :key
 
