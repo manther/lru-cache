@@ -1,5 +1,5 @@
 module LRU
-  module Cache
+  module Cacher
     VERSION = '1.0.0'
   end
 end
