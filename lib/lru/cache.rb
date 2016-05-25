@@ -60,12 +60,3 @@ module LRU
     end
   end
 end
-
-
-# lru = LRU::Cache.new(3)
-# lru.set('a', 1)
-# lru.set('b', 2)
-# lru.set('c', 3)
-# lru.set('d', 3)
-# lru.set('e', 3)
-# lru.get('a')
