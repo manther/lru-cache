@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lru/cache/version'
+require 'lru/cacher/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "lru-cache"
-  spec.version       = LRU::Cache::VERSION
+  spec.name          = "lru-cacher"
+  spec.version       = LRU::Cacher::VERSION
   spec.authors       = ["Manther"]
   spec.email         = ["jason.manther.young@gmail.com"]
 

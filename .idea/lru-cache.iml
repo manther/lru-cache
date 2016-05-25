@@ -3,14 +3,14 @@
   <component name="FacetManager">
     <facet type="gem" name="New Gem">
       <configuration>
-        <option name="GEM_APP_ROOT_PATH" value="$MODULE_DIR$" />
-        <option name="GEM_APP_TEST_PATH" value="$MODULE_DIR$/test" />
-        <option name="GEM_APP_LIB_PATH" value="$MODULE_DIR$/lib" />
+        <option name="GEM_APP_ROOT_PATH" value="$MODULE_DIR$/../lru-cache" />
+        <option name="GEM_APP_TEST_PATH" value="$MODULE_DIR$/../lru-cache/test" />
+        <option name="GEM_APP_LIB_PATH" value="$MODULE_DIR$/../lru-cache/lib" />
       </configuration>
     </facet>
   </component>
   <component name="ModuleRunConfigurationManager">
-    <configuration default="false" name="cache" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration default="false" name="cacher" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="lru-cache" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib/lru" />
@@ -25,7 +25,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/lru/cache.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/lru/cacher.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>

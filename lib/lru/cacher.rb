@@ -1,6 +1,6 @@
 require 'lru/cache/node'
 module LRU
-  class Cache
+  class Cacher
     attr_accessor :head, :tail, :max_items, :table
 
     def initialize(max_items)
@@ -16,7 +16,7 @@ module LRU
         @head = @head.next_node
       end
       if !@table.key?(key)
-        new_node = Node.new value, key, @tail, nil
+        new_node = LRU::Node.new value, key, @tail, nil
       else
         new_node       = @table[key]
         new_node.value = value
