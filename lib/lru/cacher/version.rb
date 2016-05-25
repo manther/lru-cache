@@ -1,5 +1,3 @@
 module LRU
-  module Cacher
-    VERSION = '1.0.0'
-  end
+  VERSION = '1.0.0'
 end

@@ -1,4 +1,4 @@
-require 'lru/cache/node'
+require 'lru/cacher/node'
 module LRU
   class Cacher
     attr_accessor :head, :tail, :max_items, :table

@@ -5,7 +5,7 @@ require 'lru/cacher/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "lru-cacher"
-  spec.version       = LRU::Cacher::VERSION
+  spec.version       = LRU::VERSION
   spec.authors       = ["Manther"]
   spec.email         = ["jason.manther.young@gmail.com"]
 
