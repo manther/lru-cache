@@ -1,15 +1,13 @@
-# Lru::Cache
+# Lru::Cacher
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lru/cache`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Least recently use caching gem
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lru-cache'
+gem 'lru-cacher'
 ```
 
 And then execute:
@@ -18,11 +16,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install lru-cache
+    $ gem install lru-cacher
 
 ## Usage
 
-TODO: Write usage instructions here
+@lru = LRU::Cacher.new(3)
+@lru.set(:some_key, some_value)
+@lru.get(:some_key)
 
 ## Development
 
