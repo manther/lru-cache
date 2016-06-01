@@ -25,17 +25,17 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="lib-lru-cacher_rb.html">lib/lru-cacher.rb</a></td>
-            <td class='right_align'><tt>72</tt></td>
-            <td class='right_align'><tt>38</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>98.61%</tt></div>
+            <td class='right_align'><tt>73</tt></td>
+            <td class='right_align'><tt>39</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>56.16%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:99px"></div>
-        <div class="uncovered" style="width:1px"></div>
+        <div class="covered" style="width:56px"></div>
+        <div class="uncovered" style="width:44px"></div>
       </div></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>97.37%</tt></div>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>17.95%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:97px"></div>
-        <div class="uncovered" style="width:3px"></div>
+        <div class="covered" style="width:18px"></div>
+        <div class="uncovered" style="width:82px"></div>
       </div></td>
           </tr>
         </tbody>
@@ -59,13 +59,13 @@
         <tr class="marked">
           <td><pre><a name="line4">4</a>   def initialize</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line5">5</a>     @table = {}</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line6">6</a>     @head  = nil</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line7">7</a>     @tail  = nil</pre></td>
         </tr>
         <tr class="inferred">
@@ -77,25 +77,25 @@
         <tr class="marked">
           <td><pre><a name="line10">10</a>   def set(key, value)</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line11">11</a>     new_node        = LRUCacher::Node.new value, key, @tail, nil</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line12">12</a>     @head           = new_node if @tail == nil</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line13">13</a>     @tail.next_node = new_node if @tail != nil</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line14">14</a>     @tail           = new_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line15">15</a>     @table[key]     = new_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line16">16</a>     if over_threshold?</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line17">17</a>       delete(@head.key) if @head</pre></td>
         </tr>
         <tr class="inferred">
@@ -122,49 +122,49 @@
         <tr class="marked">
           <td><pre><a name="line25">25</a>   def get(key)</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line26">26</a>     current_node = @table[key]</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line27">27</a>     if current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line28">28</a>       if @head == current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line29">29</a>         @head = current_node.next_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line30">30</a>         @tail.next_node        = current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line31">31</a>         @tail                  = current_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line32">32</a>       elsif @tail == current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line33">33</a>         current_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line34">34</a>       else</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line35">35</a>         current_node.prev_node.next_node = current_node.next_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line36">36</a>         current_node.next_node.prev_node = current_node.prev_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line37">37</a>         @tail.next_node        = current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line38">38</a>         @tail                  = current_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line39">39</a>       end</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line40">40</a>       current_node</pre></td>
         </tr>
         <tr class="inferred">
@@ -179,53 +179,53 @@
         <tr class="marked">
           <td><pre><a name="line44">44</a>   def delete(key)</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line45">45</a>     current_node = @table[key]</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line46">46</a>     if current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line47">47</a>       if @head == current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line48">48</a>         @head = current_node.next_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line49">49</a>       elsif @tail == current_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line50">50</a>         @tail = current_node.prev_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line51">51</a>       else</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line52">52</a>         current_node.prev_node.next_node = current_node.next_node</pre></td>
         </tr>
-        <tr class="marked">
+        <tr class="uncovered">
           <td><pre><a name="line53">53</a>         current_node.next_node.prev_node = current_node.prev_node</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line54">54</a>       end</pre></td>
         </tr>
-        <tr class="marked">
-          <td><pre><a name="line55">55</a>       @table.delete(key)</pre></td>
+        <tr class="uncovered">
+          <td><pre><a name="line55">55</a>       current_node = nil</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line56">56</a>       @table.delete(key)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line56">56</a>     end</pre></td>
+          <td><pre><a name="line57">57</a>     end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line57">57</a>   end</pre></td>
+          <td><pre><a name="line58">58</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line58">58</a> </pre></td>
+          <td><pre><a name="line59">59</a> </pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line59">59</a> end</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line60">60</a> </pre></td>
+          <td><pre><a name="line60">60</a> end</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line61">61</a> </pre></td>
@@ -234,28 +234,28 @@
           <td><pre><a name="line62">62</a> </pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line63">63</a> #         (0)</pre></td>
+          <td><pre><a name="line63">63</a> </pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line64">64</a> #    nn   ||</pre></td>
+          <td><pre><a name="line64">64</a> #         (0)</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line65">65</a> #    V    ||</pre></td>
+          <td><pre><a name="line65">65</a> #    nn   ||</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line66">66</a> #         ||</pre></td>
+          <td><pre><a name="line66">66</a> #    V    ||</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line67">67</a> #         ||  ^</pre></td>
+          <td><pre><a name="line67">67</a> #         ||</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line68">68</a> #         ||  pn</pre></td>
+          <td><pre><a name="line68">68</a> #         ||  ^</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line69">69</a> #         V</pre></td>
+          <td><pre><a name="line69">69</a> #         ||  pn</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line70">70</a> </pre></td>
+          <td><pre><a name="line70">70</a> #         V</pre></td>
         </tr>
         <tr class="inferred">
           <td><pre><a name="line71">71</a> </pre></td>
@@ -266,10 +266,13 @@
         <tr class="inferred">
           <td><pre><a name="line73">73</a> </pre></td>
         </tr>
+        <tr class="inferred">
+          <td><pre><a name="line74">74</a> </pre></td>
+        </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2016-05-31 17:38:42 -0500 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2016-05-31 21:15:30 -0500 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>

@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53aeabdf-3e80-4df6-ab15-58d619b35ba5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/unit/service_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lru-cache.iml" afterPath="$PROJECT_DIR$/.idea/lru-cache.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/version.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lru-cacher.gemspec" afterPath="$PROJECT_DIR$/lru-cacher.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/.last_run.json" afterPath="$PROJECT_DIR$/spec/coverage/.last_run.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/.resultset.json" afterPath="$PROJECT_DIR$/spec/coverage/.resultset.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/index.html" afterPath="$PROJECT_DIR$/spec/coverage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/index.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-memory_limited_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-memory_limited_rb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-node_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-node_rb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher_rb.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/service_spec.rb" afterPath="$PROJECT_DIR$/spec/unit/service_spec.rb" />
     </list>
     <ignored path="lru-cache.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +40,7 @@
     <SUITE FILE_PATH="coverage/lru-cacher@ItemLimited_delete_get_Moves_the_currently_gotten_item_to_the_tail_if_it_is_the_head___lru_cache.coverage" NAME="ItemLimited delete get Moves the currently gotten item to the tail if it is the head.: lru-cache Coverage Results" MODIFIED="1464731671149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
     <SUITE FILE_PATH="coverage/lru-cacher@ItemLimited_get_Moves_the_currently_gotten_item_to_the_tail_if_it_is_the_head___lru_cache.coverage" NAME="ItemLimited get Moves the currently gotten item to the tail if it is the head.: lru-cache Coverage Results" MODIFIED="1464734250712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
     <SUITE FILE_PATH="coverage/lru-cache@cache.coverage" NAME="cache Coverage Results" MODIFIED="1464038908022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/lru" MODULE_NAME="lru-cache" />
-    <SUITE FILE_PATH="coverage/lru-cacher@Run_spec__service_spec___lru_cache.coverage" NAME="Run spec 'service_spec': lru-cache Coverage Results" MODIFIED="1464734317943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
+    <SUITE FILE_PATH="coverage/lru-cacher@Run_spec__service_spec___lru_cache.coverage" NAME="Run spec 'service_spec': lru-cache Coverage Results" MODIFIED="1464748483268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
     <SUITE FILE_PATH="coverage/lru-cacher@MemoryLimited_delete_Resets_the_head_node_if_head_is_deleted__and_pops_off_the_correct_item_after__lru_cache.coverage" NAME="MemoryLimited delete Resets the head node if head is deleted, and pops off the correct item after: lru-cache Coverage Results" MODIFIED="1464734036474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
     <SUITE FILE_PATH="coverage/lru-cacher@ItemLimited_Replaces_resets_the_head_node_if_head_is_deleted__and_pops_off_the_correct_item_after__lru_cache.coverage" NAME="ItemLimited Replaces resets the head node if head is deleted, and pops off the correct item after: lru-cache Coverage Results" MODIFIED="1464729820800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
     <SUITE FILE_PATH="coverage/lru-cacher@ItemLimited__lru_cache.coverage" NAME="ItemLimited: lru-cache Coverage Results" MODIFIED="1464733225942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lru-cache" />
@@ -64,18 +65,18 @@
       <file leaf-file-name="lru-cacher.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="825">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/unit/service_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,8 +95,18 @@
       <file leaf-file-name="support.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-support-3.4.1/lib/rspec/support.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="1905">
               <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -104,8 +115,8 @@
       <file leaf-file-name="example.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state relative-caret-position="5700">
+              <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,21 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ruby-debug-ide.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.gem/ruby/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
+      <file leaf-file-name="memory_limited_java.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+            <state relative-caret-position="60">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -144,8 +145,8 @@
       <file leaf-file-name="memory_limited.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,13 +187,14 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/lru/cacher/version.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/node.rb" />
-        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/lru-cacher.gemspec" />
-        <option value="$PROJECT_DIR$/lib/lru-cacher.rb" />
-        <option value="$PROJECT_DIR$/spec/unit/service_spec.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
+        <option value="$PROJECT_DIR$/spec/unit/service_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher.rb" />
       </list>
     </option>
   </component>
@@ -203,7 +205,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1909" />
+    <option name="width" value="1920" />
     <option name="height" value="993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -232,6 +234,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,7 +319,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,10 +329,11 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../zombie-orchestration-sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zombie-eng-eh-zed-action-instance-processor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/lru-cacher" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -643,11 +646,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'service_spec': lru-cache" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.ItemLimited get Moves the currently gotten item to the tail if it is the head.: lru-cache" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.MemoryLimited: lru-cache" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.MemoryLimited delete Resets the head node if head is deleted, and pops off the correct item after: lru-cache" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.MemoryLimited delete Resets the tail node if tail is deleted, and pops off the correct item after: lru-cache" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.ItemLimited get Moves the currently gotten item to the tail if it is the head.: lru-cache" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'service_spec': lru-cache" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.MemoryLimited delete Resets the head node if head is deleted, and pops off the correct item after: lru-cache" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.MemoryLimited delete Resets the tail node if tail is deleted, and pops off the correct item after: lru-cache" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.MemoryLimited: lru-cache" />
       </list>
     </recent_temporary>
   </component>
@@ -669,7 +672,8 @@
       <workItem from="1464367720537" duration="1769000" />
       <workItem from="1464491463402" duration="21000" />
       <workItem from="1464645948749" duration="3900000" />
-      <workItem from="1464716481526" duration="11541000" />
+      <workItem from="1464716481526" duration="15153000" />
+      <workItem from="1464796364902" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -680,23 +684,11 @@
     <history-entry file="ItemLimited_get_Moves_the_currently_gotten_item_to_the_tail_if_it_is_the_head___lru-cache - 2016.05.31 at 17h 38m 32s.xml">
       <configuration name="ItemLimited get Moves the currently gotten item to the tail if it is the head.: lru-cache" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="MemoryLimited__lru-cache - 2016.05.31 at 17h 32m 46s.xml">
-      <configuration name="MemoryLimited: lru-cache" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="MemoryLimited__lru-cache - 2016.05.31 at 17h 33m 37s.xml">
-      <configuration name="MemoryLimited: lru-cache" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="MemoryLimited__lru-cache - 2016.05.31 at 17h 35m 04s.xml">
       <configuration name="MemoryLimited: lru-cache" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="MemoryLimited_delete_Resets_the_head_node_if_head_is_deleted,_and_pops_off_the_correct_item_after__lru-cache - 2016.05.31 at 17h 33m 54s.xml">
-      <configuration name="MemoryLimited delete Resets the head node if head is deleted, and pops off the correct item after: lru-cache" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="MemoryLimited_delete_Resets_the_head_node_if_head_is_deleted,_and_pops_off_the_correct_item_after__lru-cache - 2016.05.31 at 17h 34m 53s.xml">
       <configuration name="MemoryLimited delete Resets the head node if head is deleted, and pops off the correct item after: lru-cache" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="MemoryLimited_delete_Resets_the_tail_node_if_tail_is_deleted,_and_pops_off_the_correct_item_after__lru-cache - 2016.05.31 at 17h 32m 34s.xml">
-      <configuration name="MemoryLimited delete Resets the tail node if tail is deleted, and pops off the correct item after: lru-cache" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 17h 35m 13s.xml">
       <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
@@ -704,32 +696,44 @@
     <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 17h 38m 42s.xml">
       <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 21h 15m 31s.xml">
+      <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 21h 19m 29s.xml">
+      <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 21h 19m 59s.xml">
+      <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'service_spec'__lru-cache - 2016.05.31 at 21h 40m 28s.xml">
+      <configuration name="Run spec 'service_spec': lru-cache" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31098000" />
+    <option name="totallyTimeSpent" value="36685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1909" height="993" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="993" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16604178" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19116081" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43542856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08047337" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45088756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46627218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -747,43 +751,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb</url>
-          <line>9</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb</url>
-          <line>16</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>135</line>
+          <line>140</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>140</line>
+          <line>145</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>184</line>
+          <line>189</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>207</line>
+          <line>212</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>214</line>
+          <line>219</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>163</line>
+          <line>168</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -793,16 +787,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>62</line>
+          <line>67</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/unit/service_spec.rb</url>
-          <line>240</line>
+          <line>245</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/lru-cacher.rb</url>
+          <line>47</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb</url>
+          <line>21</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RubyRunConfigurationType">
@@ -811,50 +815,41 @@
         <watch expression="current_node.next_node " />
       </configuration>
       <configuration name="RSpecRunConfigurationType">
-        <watch expression="((@mem_mx_bean.heap_memory_usage.used + mem.non_heap_memory_usage.used) / 1048576) " />
         <watch expression="((@mem_mx_bean.heap_memory_usage.used + @mem_mx_bean.non_heap_memory_usage.used) / 1048576)" />
-        <watch expression="new_node.key" language="ruby" />
-        <watch expression="@table.size &gt; @max_items" />
-        <watch expression="@table.key? key" />
-        <watch expression="mem_cache.table[:two].next_node.key" />
-        <watch expression="mem_cache.table[:one]" />
-        <watch expression="@table.size" language="ruby" />
-        <watch expression="mem_cache.instance_variable_get(:@head).key" />
-        <watch expression="mem_cache.instance_variable_get(:@tail).key" />
-        <watch expression="mem_cache.instance_variable_get(:@table)" />
-        <watch expression="@table.size" language="ruby" />
+        <watch expression="@tail.next_node" language="ruby" />
+        <watch expression="new_node.prev_node" language="ruby" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/unit/service_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/node.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lru-cacher.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/bin/rspec">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-support-3.4.1/lib/rspec/support.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -867,18 +862,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.gem/ruby/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="5700">
+          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb">
+    <entry file="file://$PROJECT_DIR$/lru-cacher.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/item_limited.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -911,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +953,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/node.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lru-cacher.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gem/ruby/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -967,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,15 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,24 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-support-3.4.1/lib/rspec/support.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="1905">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1106,18 +1148,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5700">
+          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/unit/service_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>

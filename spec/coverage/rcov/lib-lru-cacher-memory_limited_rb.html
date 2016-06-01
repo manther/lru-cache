@@ -25,17 +25,17 @@
         <tbody>
           <tr>
             <td class="left_align"><a href="lib-lru-cacher-memory_limited_rb.html">lib/lru-cacher/memory_limited.rb</a></td>
-            <td class='right_align'><tt>25</tt></td>
-            <td class='right_align'><tt>16</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>92.00%</tt></div>
+            <td class='right_align'><tt>12</tt></td>
+            <td class='right_align'><tt>7</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>58.33%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:92px"></div>
-        <div class="uncovered" style="width:8px"></div>
+        <div class="covered" style="width:58px"></div>
+        <div class="uncovered" style="width:42px"></div>
       </div></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>87.50%</tt></div>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>28.57%</tt></div>
       <div class="percent_graph">
-        <div class="covered" style="width:88px"></div>
-        <div class="uncovered" style="width:12px"></div>
+        <div class="covered" style="width:29px"></div>
+        <div class="uncovered" style="width:71px"></div>
       </div></td>
           </tr>
         </tbody>
@@ -54,81 +54,42 @@
           <td><pre><a name="line2">2</a> require 'lib/lru-cacher'</pre></td>
         </tr>
         <tr class="marked">
-          <td><pre><a name="line3">3</a> require 'java'</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line4">4</a> import java.lang.management.ManagementFactory</pre></td>
+          <td><pre><a name="line3">3</a> require 'objspace'</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line5">5</a> </pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line6">6</a> class MemoryLimited &lt; LRUCacher</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line7">7</a>   def initialize(max_mem_size)</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line8">8</a>     @max_mem_size = max_mem_size</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line9">9</a>     @mem_mx_bean  = ManagementFactory.getMemoryMXBean</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line10">10</a>     super()</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line11">11</a>   end</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line12">12</a> </pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line13">13</a>   def over_threshold?</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line14">14</a>     ((@mem_mx_bean.heap_memory_usage.used + @mem_mx_bean.non_heap_memory_usage.used) / 1048576) &gt; @max_mem_size</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line15">15</a>   end</pre></td>
-        </tr>
-        <tr class="inferred">
-          <td><pre><a name="line16">16</a> </pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line17">17</a>   def pop</pre></td>
+          <td><pre><a name="line4">4</a> </pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line18">18</a>     super()</pre></td>
+          <td><pre><a name="line5">5</a> class MemoryLimitedJ &lt; LRUCacher</pre></td>
         </tr>
         <tr class="uncovered">
-          <td><pre><a name="line19">19</a>     @mem_mx_bean.gc</pre></td>
+          <td><pre><a name="line6">6</a>   def initialize(max_mem_size)</pre></td>
+        </tr>
+        <tr class="uncovered">
+          <td><pre><a name="line7">7</a>     @max_mem_size = max_mem_size</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line20">20</a>   end</pre></td>
+          <td><pre><a name="line8">8</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line21">21</a> </pre></td>
+          <td><pre><a name="line9">9</a> </pre></td>
         </tr>
-        <tr class="marked">
-          <td><pre><a name="line22">22</a>   def delete(key)</pre></td>
+        <tr class="uncovered">
+          <td><pre><a name="line10">10</a>   def over_threshold?</pre></td>
         </tr>
-        <tr class="marked">
-          <td><pre><a name="line23">23</a>     super(key)</pre></td>
-        </tr>
-        <tr class="marked">
-          <td><pre><a name="line24">24</a>     @mem_mx_bean.gc</pre></td>
+        <tr class="uncovered">
+          <td><pre><a name="line11">11</a>     ObjectSpace.memsize_of(@table) &gt; @max_mem_size</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line25">25</a>   end</pre></td>
+          <td><pre><a name="line12">12</a>   end</pre></td>
         </tr>
         <tr class="inferred">
-          <td><pre><a name="line26">26</a> end</pre></td>
+          <td><pre><a name="line13">13</a> end</pre></td>
         </tr>
       </tbody>
     </table>
 
-    <p>Generated on 2016-05-31 17:38:42 -0500 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
+    <p>Generated on 2016-05-31 21:15:30 -0500 with <a href="https://github.com/fguillen/simplecov-rcov">SimpleCov-RCov 0.2.3</a></p>
 
   </body>
 </html>

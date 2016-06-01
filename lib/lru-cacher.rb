@@ -24,17 +24,17 @@ class LRUCacher
   def get(key)
     current_node = @table[key]
     if current_node
-      if @head == current_node
-        @head = current_node.next_node
-        @tail.next_node        = current_node
-        @tail                  = current_node
-      elsif @tail == current_node
+      if @tail == current_node
         current_node
+      elsif @head == current_node
+        @head           = current_node.next_node
+        @tail.next_node = current_node
+        @tail           = current_node
       else
         current_node.prev_node.next_node = current_node.next_node
         current_node.next_node.prev_node = current_node.prev_node
-        @tail.next_node        = current_node
-        @tail                  = current_node
+        @tail.next_node                  = current_node
+        @tail                            = current_node
       end
       current_node
     end
@@ -43,7 +43,9 @@ class LRUCacher
   def delete(key)
     current_node = @table[key]
     if current_node
-      if @head == current_node
+      if @head == current_node && @tail == current_node
+        @head, @tail = nil
+      elsif @head == current_node
         @head = current_node.next_node
       elsif @tail == current_node
         @tail = current_node.prev_node
@@ -56,7 +58,6 @@ class LRUCacher
   end
 
 end
-
 
 
 #         (0)
