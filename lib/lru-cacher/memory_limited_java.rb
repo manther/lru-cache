@@ -1,4 +1,4 @@
-require 'lib/lru-cacher'
+require 'lru-cacher'
 require 'java'
 import java.lang.management.ManagementFactory
 

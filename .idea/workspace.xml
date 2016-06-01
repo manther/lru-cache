@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53aeabdf-3e80-4df6-ab15-58d619b35ba5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lru-cacher-1.0.0.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lru-cacher-1.2.0.gem" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/version.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/.last_run.json" afterPath="$PROJECT_DIR$/spec/coverage/.last_run.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/.resultset.json" afterPath="$PROJECT_DIR$/spec/coverage/.resultset.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/index.html" afterPath="$PROJECT_DIR$/spec/coverage/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/index.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-memory_limited_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-memory_limited_rb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-node_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher-node_rb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher_rb.html" afterPath="$PROJECT_DIR$/spec/coverage/rcov/lib-lru-cacher_rb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/unit/service_spec.rb" afterPath="$PROJECT_DIR$/spec/unit/service_spec.rb" />
     </list>
     <ignored path="lru-cache.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -132,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memory_limited_java.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="memory_limited_java.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -190,11 +182,11 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/lru-cacher.gemspec" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" />
-        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
-        <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
         <option value="$PROJECT_DIR$/spec/unit/service_spec.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
       </list>
     </option>
   </component>
@@ -673,7 +665,7 @@
       <workItem from="1464491463402" duration="21000" />
       <workItem from="1464645948749" duration="3900000" />
       <workItem from="1464716481526" duration="15153000" />
-      <workItem from="1464796364902" duration="1975000" />
+      <workItem from="1464796364902" duration="2664000" />
     </task>
     <servers />
   </component>
@@ -710,7 +702,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36685000" />
+    <option name="totallyTimeSpent" value="37374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="993" extended-state="6" />
@@ -1148,14 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1190,8 +1174,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
