@@ -24,7 +24,7 @@ RSpec.describe "MemoryLimited" do
       mem_cache.set(:seven, 7)
       # expect(mem_cache.instance_variable_get(:@table).key? :four).to be false
       mem_cache.set(:eight, 8)
-      # expect(mem_cache.instance_variable_get(:@table).key? :five).to be false   #Too unpredictable to unit test
+      # expect(mem_cache.instance_variable_get(:@table).key? :five).to be false   # Too unpredictable to unit test
       mem_cache.set(:nine, 9)
       mem_cache.set(:tent, 10)
       mem_cache.set(:eleven, 11)

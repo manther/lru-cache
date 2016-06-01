@@ -5,7 +5,7 @@ import java.lang.management.ManagementFactory
 class MemoryLimitedJava < LRUCacher
   def initialize(max_mem_size)
     @max_mem_size = max_mem_size
-    @mem_mx_bean  = ManagementFactory.getMemoryMXBean
+    @mem_mx_bean  = ManagementFactory.get_memory_mx_bean    # Use the snake case version
     super()
   end
 
