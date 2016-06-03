@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53aeabdf-3e80-4df6-ab15-58d619b35ba5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lru-cacher-1.3.0.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lru-cacher-1.3.1.gem" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lru-cacher/version.rb" afterPath="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
     </list>
     <ignored path="lru-cache.iws" />
@@ -102,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -152,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_limited.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item_limited.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/lru-cacher/item_limited.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -192,9 +187,9 @@
         <option value="$PROJECT_DIR$/lib/lru-cacher.rb" />
         <option value="$PROJECT_DIR$/spec/unit/service_spec.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb" />
-        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/memory_limited.rb" />
         <option value="$PROJECT_DIR$/lib/lru-cacher/item_limited.rb" />
+        <option value="$PROJECT_DIR$/lib/lru-cacher/version.rb" />
       </list>
     </option>
   </component>
@@ -674,7 +669,7 @@
       <workItem from="1464645948749" duration="3900000" />
       <workItem from="1464716481526" duration="15153000" />
       <workItem from="1464796364902" duration="5981000" />
-      <workItem from="1464972665391" duration="29000" />
+      <workItem from="1464972665391" duration="71000" />
     </task>
     <servers />
   </component>
@@ -711,13 +706,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40720000" />
+    <option name="totallyTimeSpent" value="40762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="963" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22161172" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22161172" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1187,22 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lru-cacher/memory_limited_java.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1223,6 +1202,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="43" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lru-cacher/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
