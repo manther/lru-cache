@@ -1,4 +1,4 @@
-require 'lib/lru-cacher'
+require 'lru-cacher'
 class ItemLimited < LRUCacher
   def initialize(max_items)
     @max_items = max_items

@@ -1,4 +1,4 @@
-require 'lib/lru-cacher'
+require 'lru-cacher'
 require 'objspace'
 
 class MemoryLimitedJ < LRUCacher
