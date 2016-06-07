@@ -21,6 +21,10 @@ class LRUCacher
     @table.key? key
   end
 
+  def size
+    @table.size
+  end
+
   def get(key)
     current_node = @table[key]
     if current_node
