@@ -7,11 +7,12 @@
 
 require 'spec_helper'
 
-RSpec.describe "MemoryLimited" do
+describe 'MemoryLimited' do
   require 'lru-cacher/memory_limited_java'
-  context 'set' do
+
+  describe '#set' do
     it 'Pops off least recently used when threshold is going to be exceeded' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130)
+      mem_cache = MemoryLimitedJava.new(130)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -29,11 +30,10 @@ RSpec.describe "MemoryLimited" do
       mem_cache.set(:tent, 10)
       mem_cache.set(:eleven, 11)
       mem_cache.set(:twelve, 12)
-
     end
 
     it 'Replaces tail with most recently added item' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       expect(mem_cache.instance_variable_get(:@tail).key).to be :two
@@ -44,7 +44,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Replaces overwrites value if key is added twice' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       expect(mem_cache.instance_variable_get(:@tail).key).to be :two
@@ -54,9 +54,9 @@ RSpec.describe "MemoryLimited" do
     end
   end
 
-  context 'delete' do
+  describe '#delete' do
     it 'Replaces resets the head node if head is deleted' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -65,7 +65,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Resets the head node if head is deleted, and pops off the correct item after' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -74,7 +74,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Resets the tail node if tail is deleted, and pops off the correct item after' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -83,7 +83,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Connects surrounding nodes if a node in the middle gets deleted' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -93,12 +93,11 @@ RSpec.describe "MemoryLimited" do
       expect(mem_cache.instance_variable_get(:@table)[:two].next_node.key).to be :four
       expect(mem_cache.instance_variable_get(:@table)[:four].prev_node.key).to be :two
     end
-
   end
 
-  context 'get' do
+  describe '#get' do
     it 'Moves the currently gotten item to the tail if it is between two nodes.' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -109,7 +108,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Moves the currently gotten item to the tail if it is the head.' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -121,7 +120,7 @@ RSpec.describe "MemoryLimited" do
     end
 
     it 'Moves the currently gotten item no where if it is the tail.' do
-      mem_cache = LRUCacher::MemoryLimitedJava.new(130000)
+      mem_cache = MemoryLimitedJava.new(130000)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -134,11 +133,12 @@ RSpec.describe "MemoryLimited" do
   end
 end
 
-RSpec.describe 'ItemLimited' do
+describe 'ItemLimited' do
   require 'lru-cacher/item_limited'
-  context 'set' do
+
+  describe '#set' do
     it 'Pops off least recently used when threshold is going to be exceeded' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -155,7 +155,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Replaces tail with most recently added item' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       expect(mem_cache.instance_variable_get(:@tail).key).to be :two
@@ -166,7 +166,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Replaces overwrites value if key is added twice' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       expect(mem_cache.instance_variable_get(:@tail).key).to be :two
@@ -176,9 +176,9 @@ RSpec.describe 'ItemLimited' do
     end
   end
 
-  context 'delete' do
+  describe '#delete' do
     it 'Replaces resets the head node if head is deleted' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -187,7 +187,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Resets the head node if head is deleted, and pops off the correct item after' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -199,7 +199,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Resets the tail node if tail is deleted, and pops off the correct item after' do
-      mem_cache = LRUCacher::ItemLimited.new(3)
+      mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -217,7 +217,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Connects surrounding nodes if a node in the middle gets deleted' do
-      mem_cache = LRUCacher::ItemLimited.new(5)
+      mem_cache = ItemLimited.new(5)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -227,12 +227,11 @@ RSpec.describe 'ItemLimited' do
       expect(mem_cache.instance_variable_get(:@table)[:two].next_node.key).to be :four
       expect(mem_cache.instance_variable_get(:@table)[:four].prev_node.key).to be :two
     end
-
   end
 
-  context 'get' do
+  describe '#get' do
     it 'Moves the currently gotten item to the tail if it is between two nodes.' do
-      mem_cache = LRUCacher::ItemLimited.new(5)
+      mem_cache = ItemLimited.new(5)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -243,7 +242,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Moves the currently gotten item to the tail if it is the head.' do
-      mem_cache = LRUCacher::ItemLimited.new(5)
+      mem_cache = ItemLimited.new(5)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
@@ -255,7 +254,7 @@ RSpec.describe 'ItemLimited' do
     end
 
     it 'Moves the currently gotten item no where if it is the tail.' do
-      mem_cache = LRUCacher::ItemLimited.new(5)
+      mem_cache = ItemLimited.new(5)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)
       mem_cache.set(:three, 3)
