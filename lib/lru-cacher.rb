@@ -8,12 +8,16 @@ class LRUCacher
   end
 
   def set(key, value)
-    new_node        = LRUCacher::Node.new(value, key, @tail, nil)
-    @head           = new_node unless @tail
-    @tail.next_node = new_node if @tail
-    @tail           = new_node
-    @table[key]     = new_node
-    delete(@head.key) if @head && over_threshold?
+    if exists?(key)
+      @table[key].value = value
+    else
+      new_node        = LRUCacher::Node.new(value, key, @tail, nil)
+      @head           = new_node unless @tail
+      @tail.next_node = new_node if @tail
+      @tail           = new_node
+      @table[key]     = new_node
+      delete(@head.key) if @head && over_threshold?
+    end
   end
 
   def exists?(key)
@@ -44,8 +48,8 @@ class LRUCacher
         @tail.next_node                  = current_node
         @tail                            = current_node
       end
-      current_node
     end
+    current_node
   end
 
   def delete(key)
