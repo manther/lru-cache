@@ -136,6 +136,32 @@ end
 describe 'ItemLimited' do
   require 'lru-cacher/item_limited'
 
+  describe '#bug fix' do
+    cache = ItemLimited.new(5)
+    # 100.times { |n| cache.set(n, n); p "Size: #{cache.size}; Found: #{cache.get(n).value}" }
+    cache.set(1,1)
+    cache.set(2,2)
+    cache.set(3,3)
+    cache.set(4,4)
+    cache.set(5,5)
+    cache.set(5,5)
+
+    cache.set(6,6)
+    cache.set(7,7)
+    cache.set(8,8)
+    cache.set(9,9)
+    cache.set(10,10)
+
+    # begin
+    # 100.times { |n| cache.set(n, n); p "Size: #{cache.size}; Found: #{cache.get(n - 1).value}" }
+    # rescue => e
+    #   puts 'in'
+    # end
+    #
+    # 100.times { |n| cache.set(n, n); p "Size: #{cache.size}; Found: #{cache.get(n).value}" }
+    puts 'end'
+  end
+
   describe '#set' do
     it 'Pops off least recently used when threshold is going to be exceeded' do
       mem_cache = ItemLimited.new(3)
@@ -165,7 +191,7 @@ describe 'ItemLimited' do
       expect(mem_cache.instance_variable_get(:@tail).key).to be :four
     end
 
-    it 'Replaces overwrites value if key is added twice' do
+    it 'Overwrites value if key is added twice' do
       mem_cache = ItemLimited.new(3)
       mem_cache.set(:one, 1)
       mem_cache.set(:two, 2)

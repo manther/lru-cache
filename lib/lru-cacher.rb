@@ -10,14 +10,15 @@ class LRUCacher
   def set(key, value)
     if exists?(key)
       @table[key].value = value
+      current_node      = @table[key]
     else
-      new_node        = LRUCacher::Node.new(value, key, @tail, nil)
-      @head           = new_node unless @tail
-      @tail.next_node = new_node if @tail
-      @tail           = new_node
-      @table[key]     = new_node
-      delete(@head.key) if @head && over_threshold?
+      current_node = LRUCacher::Node.new(value, key, @tail, nil)
     end
+    @head           = current_node unless @tail
+    @tail.next_node = current_node if @tail
+    @tail           = current_node
+    @table[key]     = current_node
+    delete(@head.key) if @head && over_threshold?
   end
 
   def exists?(key)
