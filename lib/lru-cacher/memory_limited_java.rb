@@ -10,7 +10,7 @@ class MemoryLimitedJava < LRUCacher
   end
 
   def over_threshold?
-    ((@mem_mx_bean.heap_memory_usage.used + @mem_mx_bean.non_heap_memory_usage.used) / 1048576) > @max_mem_size
+    (@mem_mx_bean.heap_memory_usage.used / 1048576) > @max_mem_size
   end
 
   def pop
