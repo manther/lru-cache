@@ -1,6 +1,6 @@
 # Lru::Cacher
 
-Least recently use caching gem
+Least recently used caching gem. There are two main varients. It can kick the oldest out after a specified memory threshold has been reached, or after a number of cached items has been reached. 
 
 ## Installation
 
